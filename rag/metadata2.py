@@ -1,7 +1,11 @@
 import os
 
+from dotenv import load_dotenv
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
+
+# Load environment variables from .env
+load_dotenv()
 
 # Define the persistent directory
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -16,7 +20,7 @@ db = Chroma(persist_directory=persistent_directory,
             embedding_function=embeddings)
 
 # Define the user's question
-query = "How did Juliet die?"
+query = "who was odessy?"
 
 # Retrieve relevant documents based on the query
 retriever = db.as_retriever(

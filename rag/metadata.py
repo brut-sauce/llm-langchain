@@ -1,9 +1,13 @@
 import os
 
+from dotenv import load_dotenv
 from langchain.text_splitter import CharacterTextSplitter
 from langchain_community.document_loaders import TextLoader
 from langchain_community.vectorstores import Chroma
 from langchain_openai import OpenAIEmbeddings
+
+# Load environment variables from .env
+load_dotenv()
 
 # Define the directory containing the text files and the persistent directory
 current_dir = os.path.dirname(os.path.abspath(__file__))
