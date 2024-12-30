@@ -74,6 +74,7 @@ print("Embedding demonstrations for OpenAI and Hugging Face completed.")
 # Function to query a vector store
 def query_vector_store(store_name, query, embedding_function):
     persistent_directory = os.path.join(db_dir, store_name)
+    
     if os.path.exists(persistent_directory):
         print(f"\n--- Querying the Vector Store {store_name} ---")
         db = Chroma(
