@@ -99,3 +99,6 @@ When you're done, deactivate the virtual environment:
 ```
 deactivate
 ```
+
+## References
+YT Video: https://youtu.be/yF9kGESAi3M?si=6PTw0Mi7RnXNeKpi
