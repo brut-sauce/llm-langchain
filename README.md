@@ -77,6 +77,22 @@ source ~/.zshrc  # or source ~/.bashrc
 
 Once the environment is set up, you can start using the project. Refer to the specific examples or files. Each file can be run independently
 
+Recommended Order:
+1. chat_models
+    - basics.py
+    - alternatives.py
+    - conversation.py
+    - conversation_with_history.py (requires additional google firestore setup, steps mentioned in the file)
+2. prompt_template
+    - basics.py
+    - chat_model.py
+3. chains
+    - basics.py
+    - extended.py
+    - internals.py
+    - parallel.py
+    - branching.py
+
 
 ## Deactivating the Virtual Environment
 When you're done, deactivate the virtual environment:
