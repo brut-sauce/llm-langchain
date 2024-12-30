@@ -12,7 +12,7 @@ This repository provides tools and examples for leveraging Large Language Models
 
 ### Step 1: Clone the Repository
 ```
-git clone https://github.com/your-username/llm-langchain.git
+git clone https://github.com/brut-sauce/llm-langchain.git
 
 cd llm-langchain
 ```
