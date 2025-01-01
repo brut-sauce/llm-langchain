@@ -39,12 +39,14 @@ embeddings = OpenAIEmbeddings(
 # Function to create and persist vector store
 def create_vector_store(docs, store_name):
     persistent_directory = os.path.join(db_dir, store_name)
+
     if not os.path.exists(persistent_directory):
         print(f"\n--- Creating vector store {store_name} ---")
         db = Chroma.from_documents(
             docs, embeddings, persist_directory=persistent_directory
         )
         print(f"--- Finished creating vector store {store_name} ---")
+        
     else:
         print(
             f"Vector store {store_name} already exists. No need to initialize.")
